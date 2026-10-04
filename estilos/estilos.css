@@ -1,0 +1,403 @@
+/* Elimina los márgenes por defecto del navegador */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+			 font-family:  sans-serif;
+        }
+		
+		*, *::before, *::after {
+			  box-sizing: border-box;
+			}
+		
+		body{
+			background-color:#2D045C;
+		
+			display:grid;
+			grid-template-columns:5fr 1fr;
+			grid-template-rows:auto 1fr auto;
+			grid-template-areas:
+						"header header"
+						"nav  nav"
+						"main aside"
+						"foot  foot";
+			align-items: stretch;
+			
+			
+		}
+
+        /* Banner principal  */
+        .banner-hero {
+			display:flex;
+			width: 100%; 
+			background-color: black;
+            color: #ffffff;
+                    
+			padding-left: 20px;
+			grid-area:header;
+		}
+		
+		
+		/*Barra de navegación*/
+		.main-header {
+			position: sticky;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #ffffff; /* Es obligatorio poner un color de fondo para que el contenido de abajo no se transparente */
+			display:flex;
+			flex-direction: row;
+			padding:5px;
+			justify-content: left; /* Centra el nav dentro del header */
+			grid-area:nav;
+			 z-index: 100; 
+			
+		}			
+		.main-header img {
+			 max-width: 100px; /* Ajusta el ancho máximo de tu logo aquí */
+			 height: auto;
+			 align-self: center;
+			 		
+		}		
+		.nav-menu{
+			display:flex;
+			flex-direction: row;
+			gap:20px;
+			width: 100%;
+			list-style: none; /* Elimina por completo los puntos negros */
+			font-size: 16px; /* Tamaño estándar e ideal para la mayoría de pantallas */
+			font-weight: 500; /* Opcional: un grosor medio para que se lea mejor sin ser negrita gruesa */
+
+		}
+		
+		.nav-link {
+			color: #000000; /* Fuerza el color negro en el texto */
+			text-decoration: none; /* Opcional: quita el subrayado azul que viene por defecto */
+			
+		}
+		.nav-link:hover {
+			color: red; /* Cambia a un color de acento (por ejemplo, un morado moderno) */
+			transition: color 0.3s ease; /* Hace que el cambio de color sea suave y no brusco */
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		/*Contenido principal index*/
+		.main-content{
+			grid-area:main;
+			padding:0 20px;	
+			color:#E0E0E0;
+							
+		}		
+		
+		
+		.info-circuito{
+			display:grid;
+			grid-template-columns:2fr 3fr;
+			grid-template-rows:auto 1fr;
+			gap:20px;
+			  /* DIBUJAr EL MAPA */
+			grid-template-areas: 
+				"titulo titulo"
+				"texto  imagen";
+			align-items: stretch;
+			padding-left:30px;
+			
+			
+			
+		}
+		.main-content h2{
+			grid-area:titulo;
+			
+			color:#E6CB02;
+			letter-spacing: 2.5px;
+			font-size:4rem;
+			font-style: italic;
+		}
+			
+		.main-content h3{
+			
+			color:#E6CB02;
+			letter-spacing: 2px;
+			font-size:1.5rem;
+			 
+			
+		}
+		.info-circuito aside{
+			grid-area:texto;
+		
+			
+			background: linear-gradient(to right, #1F0340, #2D045C);
+			padding-left:20px;
+			padding-right:20px;
+			
+			
+		}
+		
+		.info-circuito img{
+			max-width:100%;
+			height:auto;
+			background:#CDCCCF;	
+			
+			grid-area:imagen;
+			padding:20px;
+			display:block;
+		}
+		
+		.info-circuito ul{
+			list-style: ;
+			
+			
+		}
+		
+		.como-llegar{
+			display:grid;
+			grid-template-columns:1fr 1fr;
+			
+			gap:20px;
+			
+			align-items: stretch;
+			padding-left:30px;
+			
+			
+			
+		}
+		
+		.como-llegar h2{
+			
+			grid-row: 1; /*Para que los titulos ocupen la primera fila*/
+			grid-column: 1 / -1;
+		}
+		
+		.como-llegar section:last-of-type {
+			width:100%;
+			height:auto;
+			grid-column: span 2;     /*El ultimo elemento ocupe las dos columas*/
+			 
+		}
+		.como-llegar dt{
+			font-weight: bold;   
+			font-size:1.2rem;
+			padding:10px;
+		}
+
+		.main-content a{
+			
+			color:#E6CB02;
+			text-decoration:none;
+			
+			
+		}
+		.main-content a:hover{
+			
+			transform: scale(1.05);
+			color:red;
+			
+		}
+		
+		/*contenida ppal resultados*/
+		
+		.resultados-monaco {
+			display: grid;
+ 			grid-template-columns: 1fr 1fr; 
+					
+		}
+			
+	
+		
+		.resultados {
+			display: grid;
+ 			grid-template-columns: 1fr 2fr ; 
+			grid-template-rows:auto 1fr ;
+			gap:20px;
+				color:#FFF;	
+				
+		}
+		
+			
+		.resultados img{
+			max-width:100%;
+			height:auto;
+					
+			
+			padding:20px;
+			display:block;
+			
+		}
+		
+		.resultados table{
+			
+			  width: 100%;                  
+			  margin: 15px 0;  
+			  border: solid #fff;
+			}
+
+
+		.resultados th, td {
+                
+			  padding: 2px 5px; 
+				border-bottom: 1px solid #e0e0e0; /			  
+			}
+						
+					
+		
+		
+		.leyendas-monaco{
+			display: grid;
+ 			grid-template-columns: 1fr 1fr; 
+		}
+		
+		
+		.leyendas-monaco section:last-of-type {
+			width:100%;
+			height:auto;
+			grid-column: span 2;     /*Ocupar las dos ultimas columnas*/
+			 
+		}
+
+		.leyenda img{
+			max-width:100%;
+			height:auto;
+					
+			
+			padding:20px;
+			display:block;
+			
+		}
+		
+		
+		
+		
+		
+		/*Barra lateral de enlaces*/
+		
+		.sidebar{
+			display:flex;
+			flex-direction: column;
+			grid-area:aside;
+			padding:200px 10px 1px 10px;
+			
+			
+		}
+		
+		.sidebar a{
+			
+			position: relative;
+			display: inline-block;
+			
+			color:#000;
+			font-weight: bold;
+			text-shadow: 0 0 6px #FFF;
+			
+			
+			border: 1px solid #000;
+			margin-bottom:10px;
+			text-decoration:none;
+			text-align:center;
+			padding:10px;
+			background-color:#FFF;
+		}
+		
+		.sidebar a:hover{
+			transform: scale(1.05);
+			
+			
+		}
+		.sidebar img{
+			display: block;
+			width: 100%;
+			height: auto;
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		/*Pie de pagina*/
+		
+		.main-footer{
+			
+			width: 100%;
+			height: auto;			
+			background-color: black;
+           
+            margin-top:50px;
+			padding: 50px 20px 20px 20px;
+			color:#E6CB02;
+			display: grid;
+ 
+			grid-template-columns: 1fr 1fr 2fr 2fr; 
+			
+			gap:30px;
+			
+			grid-area:foot;
+			
+		}
+		.main-footer h2{
+			font-size:1.2rem;
+			 color: #ffffff;
+		}
+		.main-footer img{
+			
+			max-width:50px;
+			height:auto;
+		}
+		
+		.main-footer li{
+			padding-bottom:15px;
+						
+			list-style:none;
+			
+		}
+		.main-footer a{
+			
+			color:#E6CB02;
+			text-decoration:none;
+			
+		}
+		.main-footer a:hover{
+			
+			transform: scale(1.05);
+			color:red;
+			
+		}
+		
+		.patrocinadores {
+			display:grid;
+			grid-template-columns:1fr 1fr;
+			gap:5px;
+			font-size:0.8rem;
+		}
+		.citas a{
+			font-size:0.8rem;
+		}
+		
+		   
+		.formulario-contacto{
+			
+			
+			width:auto;
+			padding:20px;
+			
+			display:grid;
+			grid-template-columns:1fr 1fr;
+			
+			align-items: start;
+			gap:5px;			
+		}
+		.formulario-contacto button{
+			
+			border-radius: 8px;
+			width:50%;
+			align-items:center;
+		}
+		
