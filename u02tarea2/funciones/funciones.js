@@ -3,7 +3,6 @@
 function preguntaNombre(){
 	
 	let nombre=sessionStorage.getItem("nombreGuardado"); //comprobar si se a registrado visita
-
 	if(nombre===null){
 		nombre = prompt("¿Cuál es tu nombre?");
 		if(nombre===null || nombre.trim()==="")
@@ -20,7 +19,6 @@ function preguntaNombre(){
  function mostrarSaludo() {
 	
 	const horaActual=new Date().getHours();
-	
 	let elementoBienvenida=document.querySelector(".bienvenida");
 	let nombreUsuario=sessionStorage.getItem("nombreGuardado");
 		
@@ -46,7 +44,7 @@ function preguntaNombre(){
 	
 function moverTexto(){
 	let elementoBienvenida=document.querySelector(".bienvenida");
-const posicionFinal=window.innerWidth - elementoBienvenida.offsetWidth;
+	const posicionFinal=window.innerWidth - elementoBienvenida.offsetWidth;
 
 		posicion += velocidad;//mover
 		
