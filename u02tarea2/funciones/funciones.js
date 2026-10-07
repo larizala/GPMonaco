@@ -1,4 +1,4 @@
-//primera funcion, mensaje de bienvenida
+//primera función, mensaje de bienvenida
 
 function preguntaNombre(){
 	
@@ -8,7 +8,7 @@ function preguntaNombre(){
 		nombre = prompt("¿Cuál es tu nombre?");
 		if(nombre===null || nombre.trim()==="")
 		{
-		nombre="anonimo";
+		nombre="anónimo";
 			
 		}
 		sessionStorage.setItem("nombreGuardado",nombre);
@@ -60,7 +60,7 @@ const posicionFinal=window.innerWidth - elementoBienvenida.offsetWidth;
   		
 		document.documentElement.style.setProperty('--posicionTexto', posicion+'px'); //pasar valor al css
 		
-		requestAnimationFrame(moverTexto); //llamar a la funcion en bucle
+		requestAnimationFrame(moverTexto); //llamar a la función en bucle
 	
 	
 }
@@ -76,7 +76,7 @@ moverTexto();
 
 
 
- //segunda funcion Cambiar color --> faltaria mejorar el parpadeo
+ //segunda función Cambiar color --> faltaría mejorar el parpadeo
 	
 	
 	const eleccion=document.querySelector("#opciones");
@@ -147,7 +147,7 @@ eleccion.addEventListener('change', cambioEscuderia);
 document.addEventListener('DOMContentLoaded', cargarSesion);
 
 
-// tercera funcion validar formulario
+// tercera función validar formulario
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -163,7 +163,7 @@ if (document.formulario.nombre.value.length==0){
 }
 
 //validar correo
-var filtroCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//esctructura de un correo
+var filtroCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//estructura de un correo
 var correoValor = document.formulario.correo.value;
 
 if (!filtroCorreo.test(correoValor)) {
@@ -178,7 +178,7 @@ if (document.formulario.mensaje.value.length<30){
   document.formulario.mensaje.focus();
   return false;
 }
-//el formulario se envia
+//el formulario se envía
 alert("Mensaje enviado");
 return true;
 }
