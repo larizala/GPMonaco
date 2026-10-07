@@ -44,17 +44,17 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			background-color: #ffffff; /* Es obligatorio poner un color de fondo para que el contenido de abajo no se transparente */
+			background-color: #ffffff; 
 			display:flex;
 			flex-direction: row;
 			padding:5px;
-			justify-content: left; /* Centra el nav dentro del header */
+			justify-content: left; 
 			grid-area:nav;
 			 z-index: 100; 
 			
 		}			
 		.main-header img {
-			 max-width: 100px; /* Ajusta el ancho máximo de tu logo aquí */
+			 max-width: 100px; 
 			 height: auto;
 			 align-self: center;
 			 		
@@ -65,18 +65,18 @@
 			gap:20px;
 			width: 100%;
 			list-style: none; /* Elimina por completo los puntos negros */
-			font-size: 16px; /* Tamaño estándar e ideal para la mayoría de pantallas */
-			font-weight: 500; /* Opcional: un grosor medio para que se lea mejor sin ser negrita gruesa */
+			font-size: 16px; 
+			font-weight: 500; 
 
 		}
 		
 		.nav-link {
-			color: #000000; /* Fuerza el color negro en el texto */
-			text-decoration: none; /* Opcional: quita el subrayado azul que viene por defecto */
+			color: #000000; 
+			text-decoration: none; 
 			
 		}
 		.nav-link:hover {
-			color: red; /* Cambia a un color de acento (por ejemplo, un morado moderno) */
+			color: red; 
 			transition: color 0.3s ease; /* Hace que el cambio de color sea suave y no brusco */
 		}
 		
@@ -171,14 +171,14 @@
 		
 		.como-llegar h2{
 			
-			grid-row: 1; /*Para que los titulos ocupen la primera fila*/
+			grid-row: 1; /*Para que los títulos ocupen la primera fila*/
 			grid-column: 1 / -1;
 		}
 		
 		.como-llegar section:last-of-type {
 			width:100%;
 			height:auto;
-			grid-column: span 2;     /*El ultimo elemento ocupe las dos columas*/
+			grid-column: span 2;     /*El ultimo elemento ocupe las dos columnas*/
 			 
 		}
 		.como-llegar dt{
