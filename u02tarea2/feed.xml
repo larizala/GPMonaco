@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GP Mónaco</title>
     <link>https://larizala.github.io/GPMonaco/u02tarea2/</link>
     <language>es-es</language>
     <description>Canal RSS con información del Gran Premio de Mónaco.</description>
     <managingEditor>larizala@ikaslea.birt.eus (Lorena Arizala)</managingEditor>
+
+    <atom:link href="https://larizala.github.io/GPMonaco/u02tarea2/feed.xml" rel="self" type="application/rss+xml" />
     
 
     <item>
