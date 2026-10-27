@@ -5,7 +5,7 @@
     <link>https://larizala.github.io/GPMonaco/u02tarea2/</link>
     <language>es-es</language>
     <description>Canal RSS con información del Gran Premio de Mónaco.</description>
-    <managingEditor>larizala@ikaslea.birt.eus</managingEditor>
+    <managingEditor>larizala@ikaslea.birt.eus (Lorena Arizala)</managingEditor>
     
 
     <item>
@@ -13,7 +13,7 @@
       <link>https://larizala.github.io/GPMonaco/u02tarea2/leyendas.html</link>
       <description>Una nueva leyenda del circuito de Mónaco</description>
       <pubDate>Tue, 27 Oct 2026 10:00:00 +0100</pubDate>
-      <author>larizala@ikaslea.birt.eus</author>
+      <author>larizala@ikaslea.birt.eus  (Lorena Arizala)</author>
     </item>
 
      <item>
@@ -21,7 +21,7 @@
       <link>https://larizala.github.io/GPMonaco/u02tarea2/resultados.html</link>
       <description>Actualización sobre la carrera de 2026</description>
       <pubDate>Tue, 27 Oct 2026 09:00:00 +0100</pubDate>
-      <author>larizala@ikaslea.birt.eus</author>
+      <author>larizala@ikaslea.birt.eus  (Lorena Arizala)</author>
     </item>
   </channel>
 </rss>
